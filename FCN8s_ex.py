@@ -19,7 +19,7 @@ def Bilinear_interpolation(src, new_size):# Input original size and new size of 
     scale_y = float(src_h)/dst_h
 
     # generate an empty image whose size is same with target
-    dst = np.zeros((dst_h, dst_w, 3)) # 3 is number of channels
+    dst = np.zeros((dst_h, dst_w, 3), dtype = np.unit8) # 3 is number of channels
 
     # Traverse every coordinate in each channel through loop
     for n in range(3):
